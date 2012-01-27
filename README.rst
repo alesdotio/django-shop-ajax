@@ -33,6 +33,6 @@ Usage
 
 ::
 
-  <a href="#" onclick="javascript:SHOP.addItem({{ product.id }})">Add to cart</a>
+  <a href="#" onclick="SHOP.addItem({{ product.id }})">Add to cart</a>
   ...
 
