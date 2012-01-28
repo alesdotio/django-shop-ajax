@@ -9,8 +9,10 @@ Installation
 
 This requires django SHOP to work (https://github.com/chrisglass/django-shop)
 
-* Add `shop_ajax` to your INSTALLED_APPS in your settings.py
+* Add ``shop_ajax`` to your ``INSTALLED_APPS`` in your settings.py
 * On your server run `python manage.py collectstatic` to collect all app's static files
+
+Alternatively, you can just copy the content of shop.js in your javascript files.
 
 Usage
 =====
