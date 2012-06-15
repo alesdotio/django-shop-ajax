@@ -35,6 +35,6 @@ Usage
 
 ::
 
-  <a href="#" onclick="SHOP.addItem({{ product.id }})">Add to cart</a>
+  <a href="#" onclick="SHOP.cart.addItem({{ product.id }})">Add to cart</a>
   ...
 
