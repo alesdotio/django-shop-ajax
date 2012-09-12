@@ -7,7 +7,7 @@ This app adds some nifty ajax functions you can use with django SHOP.
 Installation
 ============
 
-This requires django SHOP to work (https://github.com/chrisglass/django-shop)
+This requires jQuery (http://jquery.com/) and django SHOP to work (https://github.com/chrisglass/django-shop)
 
 * Add ``shop_ajax`` to your ``INSTALLED_APPS`` in your settings.py
 * On your server run `python manage.py collectstatic` to collect all app's static files
