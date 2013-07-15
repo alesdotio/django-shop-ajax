@@ -34,9 +34,9 @@ jQuery(document).ready(function ($) {
 		addItem: function(item_id, quantity, success_callback, error_callback) {
 			success_callback = (success_callback) ? success_callback : function(){};
 			error_callback = (error_callback) ? error_callback : function(){};
-            if(!quantity) {
-                quantity = 1;
-            }
+			if(!quantity) {
+				quantity = 1;
+			}
 			$.ajax({
 				type: 'POST',
 				url: this.add_item_url,
