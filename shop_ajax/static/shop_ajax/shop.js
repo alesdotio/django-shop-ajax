@@ -31,13 +31,16 @@ jQuery(document).ready(function ($) {
 			error_callback = (error_callback) ? error_callback : function(){};
 			this.setItem(item_id, 0, success_callback, error_callback)
 		},
-		addItem: function(item_id, success_callback, error_callback) {
+		addItem: function(item_id, quantity, success_callback, error_callback) {
 			success_callback = (success_callback) ? success_callback : function(){};
 			error_callback = (error_callback) ? error_callback : function(){};
+			if(!quantity) {
+				quantity = 1;
+			}
 			$.ajax({
 				type: 'POST',
 				url: this.add_item_url,
-				data: {'add_item_id': item_id, 'csrfmiddlewaretoken': this.csrf_token},
+				data: {'add_item_id': item_id, 'csrfmiddlewaretoken': this.csrf_token, 'add_item_quantity': quantity},
 				success: success_callback,
 				error: error_callback
 			});
